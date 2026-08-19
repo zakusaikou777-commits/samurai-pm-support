@@ -1,0 +1,25 @@
+name: 💡 機能要望 / Feature request
+description: こうなると嬉しい、という提案
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        実装をお約束するものではありません。いただいた要望はまとめて検討します。
+
+        Submitting a request does not imply it will be implemented.
+  - type: textarea
+    id: problem
+    attributes:
+      label: 困っていること / What problem are you hitting?
+      description: 「何が欲しいか」より「何に困っているか」を書いていただけると、より良い解決策を検討できます
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: こうなると良い / Your idea
+  - type: textarea
+    id: workaround
+    attributes:
+      label: 今どうしのいでいるか / Current workaround
