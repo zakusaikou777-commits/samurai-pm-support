@@ -1,0 +1,66 @@
+name: 🐛 不具合の報告 / Bug report
+description: 動作がおかしい / エラーが出る
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        まず **アプリ内の「❓ ヘルプ」** をご確認ください。使い方の多くはそこで解決します。
+        請求・返金・ライセンスキーの再取得は **Polar の購入履歴** からお願いします（ここでは扱えません）。
+
+        Please check the in-app **Help** first. For billing, refunds or lost license keys, use your **Polar** purchase history.
+  - type: input
+    id: version
+    attributes:
+      label: アプリのバージョン / App version
+      placeholder: "14.18.137"
+    validations:
+      required: true
+  - type: dropdown
+    id: os
+    attributes:
+      label: OS
+      options:
+        - Windows 11
+        - Windows 10
+        - その他 / Other
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 再現手順 / Steps to reproduce
+      description: 1. → 2. → 3. の形でお願いします
+      placeholder: |
+        1. モデルタブを開く
+        2. スキャンを実行
+        3. エラーが出る
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期待した動作 / Expected behaviour
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: 実際の動作 / Actual behaviour
+    validations:
+      required: true
+  - type: textarea
+    id: console
+    attributes:
+      label: コンソールエラー / Console errors
+      description: "Ctrl + Shift + I → Console タブ → 赤い行をスクリーンショット or コピー"
+      render: text
+  - type: checkboxes
+    id: checked
+    attributes:
+      label: 確認 / Checklist
+      options:
+        - label: アプリ内ヘルプを確認した / I checked the in-app Help
+          required: true
+        - label: 最新バージョンで再現した / Reproduced on the latest version
+          required: true
