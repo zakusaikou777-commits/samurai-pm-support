@@ -1,7 +1,7 @@
 blank_issues_enabled: false
 contact_links:
   - name: 💳 請求・返金・領収書 / Billing, refunds, receipts
-    url: https://polar.sh/purchases
+    url: https://polar.sh/samuraiya-tool/portal
     about: 決済は Polar が扱っています。購入履歴からお手続きください。/ Payments are handled by Polar — use your purchase history.
   - name: 🔑 ライセンスキーの紛失 / Lost license key
     url: https://polar.sh/purchases
